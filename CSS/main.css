@@ -83,7 +83,7 @@ img {
 }
 .hero::before {
   position: absolute;
-  content: url(/img/decor/line.png);
+  content: url(img/decor/line.png);
   bottom: -28px;
   left: 70%;
 }
