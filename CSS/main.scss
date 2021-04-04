@@ -1,0 +1,39 @@
+$containerWidth: 940px;
+$baseFontSize: 16px;
+
+//color
+$black: #292929;
+$red: #e01f3d;
+$grey: #f5f5f5;
+
+//z-indexes
+$z-fixed-menu: 100;
+
+//normalize
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+//setups
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap");
+@import "layout";
+
+//components
+@import "components/hero";
+@import "components/header";
+@import "components/menu";
+@import "components/contacts-phone";
+@import "components/features";
+@import "components/feature";
+@import "components/btn";
+@import "components/section";
+@import "components/headline__title";
+@import "components/benefits";
+@import "components/benefit";
+@import "components/benefits-section";
+@import "components/reviews";
+@import "components/interectiv-avatar";
+@import "components/reviews-section";
+@import "components/order-section";
+@import "components/form";
+@import "components/radio";
+@import "components/map-section";
+@import "components/fixed-menu";
