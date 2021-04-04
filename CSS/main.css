@@ -451,9 +451,6 @@ img {
   flex: 1;
   margin-right: 23px;
 }
-.form__col:nth-child(4) {
-  margin-bottom: 0;
-}
 .form__col:last-child {
   margin-right: 0;
 }
