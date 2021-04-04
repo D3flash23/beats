@@ -451,6 +451,9 @@ img {
   flex: 1;
   margin-right: 23px;
 }
+.form__col:nth-child(4) {
+  margin-bottom: 0;
+}
 .form__col:last-child {
   margin-right: 0;
 }
@@ -489,6 +492,7 @@ img {
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 32px;
 }
 .form__controls:last-child {
   margin-right: 10px;
@@ -503,10 +507,6 @@ img {
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
-  margin: 16px 17px 0 0;
-}
-.radio:last-child {
-  margin-right: 0;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -543,7 +543,8 @@ img {
 }
 
 .radio__title {
-  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 17px;
 }
 
 .map-section {
@@ -560,6 +561,9 @@ img {
 
 .fixed-menu__item {
   margin-bottom: 7px;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #e01f3d;

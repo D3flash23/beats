@@ -9,6 +9,10 @@
 .fixed-menu__item {
   margin-bottom: 7px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &--active {
     .fixed-menu__link {
       border-color: $red;
