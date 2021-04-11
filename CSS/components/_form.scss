@@ -1,29 +1,45 @@
 .form {
   display: flex;
   font-family: Play;
-  line-height: 21px;
+  line-height: 1.3125rem;
+
+  @include tablets {
+    padding: 0 16%;
+    margin-right: 0;
+    flex-direction: column;
+  }
+  @include phones {
+    padding: 0;
+  }
 }
 
 .form__col {
   flex: 1;
-  margin-right: 23px;
+  margin-right: 1.4375rem;
 
   &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
     margin-right: 0;
   }
 }
 .form__row {
   display: flex;
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
 
   &:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
+  }
+  @include tablets {
+    margin: 0.875rem 0;
   }
 }
 
 .form__block {
   flex: 1;
-  margin-right: 12px;
+  margin-right: 0.75rem;
 
   &:last-child {
     margin-right: 0;
@@ -31,30 +47,43 @@
 }
 .form__input {
   width: 100%;
-  padding: 18px 12px;
-  border-radius: 4px;
-  border: 3px solid transparent;
+  padding: 1.125rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 0.1875rem solid transparent;
 
   &--textarea {
-    height: 152px;
+    height: 9.5rem;
     resize: none;
+    @include tablets {
+      height: rem(82px);
+    }
   }
 
   &:focus {
     border-color: $red;
     outline: none;
   }
+
+  @include tablets {
+    padding: 0.5rem 0.75rem;
+  }
 }
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 32px;
+  margin-top: 2rem;
+
+  @include phones {
+    justify-content: center;
+  }
 
   &:last-child {
-    margin-right: 10px;
+    margin-right: 0.625rem;
   }
 }
 
 .form__btns {
-  margin-top: 44px;
+  display: flex;
+  margin-top: 2.75rem;
+  justify-content: center;
 }

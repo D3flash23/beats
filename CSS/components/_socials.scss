@@ -1,0 +1,42 @@
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: flex;
+  text-decoration: none;
+  width: rem(30px);
+  height: rem(30px);
+  background: center center no-repeat;
+  border-radius: 50%;
+
+  &--vk {
+    &:hover {
+      background-color: $black;
+    }
+  }
+
+  &--instagram {
+    &:hover {
+      background: $black;
+    }
+  }
+
+  &--facebook {
+    &:hover {
+      background: $black;
+    }
+  }
+
+  &--tg {
+    &:hover {
+      background: $black;
+    }
+  }
+}

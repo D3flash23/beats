@@ -1,10 +1,16 @@
 $containerWidth: 940px;
 $baseFontSize: 16px;
 
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 //color
 $black: #292929;
 $red: #e01f3d;
 $grey: #f5f5f5;
+
+@import "media";
 
 //z-indexes
 $z-fixed-menu: 100;
@@ -19,6 +25,7 @@ $z-fixed-menu: 100;
 //components
 @import "components/hero";
 @import "components/header";
+@import "components/logo";
 @import "components/menu";
 @import "components/contacts-phone";
 @import "components/features";
@@ -37,3 +44,7 @@ $z-fixed-menu: 100;
 @import "components/radio";
 @import "components/map-section";
 @import "components/fixed-menu";
+@import "components/hamburger";
+@import "components/footer";
+@import "components/contacts";
+@import "components/socials";

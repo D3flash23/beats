@@ -4,7 +4,11 @@
   &::before {
     position: absolute;
     content: url(../img/decor/triangle.png);
-    bottom: -22px;
+    bottom: -1.375rem;
     left: 25%;
+
+    @include tablets {
+      left: 5%;
+    }
   }
 }
