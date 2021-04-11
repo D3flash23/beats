@@ -47,9 +47,9 @@
   padding-left: rem(40px);
   padding-top: rem(35px);
 
-  @include tablets {
-    padding-left: 0.5rem;
-  }
+  //   @include tablets {
+  //     padding-left: 0.5rem;
+  //   }
 }
 .reviews__title {
   font-family: Play;
