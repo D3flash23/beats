@@ -8,6 +8,7 @@
     margin-right: 0;
     flex-direction: column;
   }
+
   @include phones {
     padding: 0;
   }
@@ -25,6 +26,7 @@
     margin-right: 0;
   }
 }
+
 .form__row {
   display: flex;
   margin-bottom: 0.875rem;
@@ -45,6 +47,7 @@
     margin-right: 0;
   }
 }
+
 .form__input {
   width: 100%;
   padding: 1.125rem 0.75rem;
@@ -68,6 +71,7 @@
     padding: 0.5rem 0.75rem;
   }
 }
+
 .form__controls {
   display: flex;
   flex-wrap: wrap;
