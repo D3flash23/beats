@@ -137,7 +137,7 @@ img {
     content: "";
     width: 20.1875rem;
     height: 20.1875rem;
-    background: url(/img/decor/headphones2.png) center center/contain no-repeat;
+    background: url(../img/decor/headphones2.png) center center/contain no-repeat;
     margin-bottom: 3.4375rem;
   }
 }
@@ -477,7 +477,6 @@ img {
   background: #f2f5f4;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 0.75rem;
 }
 
 .betefit__icon {
@@ -564,7 +563,6 @@ img {
 
 .reviews__content {
   flex: 1;
-  padding-left: 2.5rem;
   padding-top: 2.1875rem;
 }
 
@@ -952,7 +950,8 @@ img {
   border-radius: 50%;
 }
 .socials__link--vk:hover {
-  background-color: #292929;
+  background: #292929;
+  background: url(#292929);
 }
 .socials__link--instagram:hover {
   background: #292929;
