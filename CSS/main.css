@@ -569,7 +569,12 @@ svg path {
 
 .reviews__content {
   flex: 1;
-  padding-top: 2.1875rem;
+  padding: 2.1875rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    padding: 0;
+  }
 }
 
 .reviews__title {
@@ -691,11 +696,6 @@ svg path {
     margin-right: 0;
   }
 }
-@media screen and (max-width: 480px) {
-  .form__col {
-    justify-content: center;
-  }
-}
 
 .form__row {
   display: flex;
@@ -771,6 +771,11 @@ svg path {
   align-items: center;
   margin-right: 22px;
   -webkit-box-align: center;
+}
+@media screen and (max-width: 768px) {
+  .radio {
+    margin-bottom: 0.625rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .radio {

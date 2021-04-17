@@ -44,7 +44,10 @@
 
 .reviews__content {
     flex: 1;
-    padding-top: rem(35px);
+    padding: rem(35px);
+    @include tablets {
+        padding: 0;
+    }
 }
 
 .reviews__title {

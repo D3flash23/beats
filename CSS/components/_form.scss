@@ -21,9 +21,6 @@
     @include tablets {
         margin-right: 0;
     }
-    @include phones {
-        justify-content: center;
-    }
 }
 
 .form__row {

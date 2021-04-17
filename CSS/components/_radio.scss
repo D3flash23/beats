@@ -1,62 +1,60 @@
 .radio {
-  display: flex;
-  cursor: pointer;
-  user-select: none;
-  align-items: center;
-  margin-right: 22px;
-  -webkit-box-align: center;
-
-  @include phones {
-    margin-bottom: rem(10px);
-  }
-
-  &--checkbox {
-    .radio__visible {
-      border-radius: 0;
-
-      &:before {
-        background: url("../img/icon/tick.png") center center no-repeat;
-      }
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    margin-right: 22px;
+    -webkit-box-align: center;
+    @include tablets {
+        margin-bottom: rem(10px);
     }
-  }
+    @include phones {
+        margin-bottom: rem(10px);
+    }
+    &--checkbox {
+        .radio__visible {
+            border-radius: 0;
+            &:before {
+                background: url("../img/icon/tick.png") center center no-repeat;
+            }
+        }
+    }
 }
 
 .radio__elem {
-  display: none;
-
-  &:checked ~ .radio__visible {
-    &:before {
-      display: block;
+    display: none;
+    &:checked~.radio__visible {
+        &:before {
+            display: block;
+        }
     }
-  }
 }
 
 .radio__visible {
-  width: rem(26px);
-  height: rem(26px);
-  position: relative;
-  border-radius: 50%;
-  background: #fff;
-
-  &:before {
-    content: "";
-    width: rem(13px);
-    height: rem(13px);
-    background: $red;
+    width: rem(26px);
+    height: rem(26px);
+    position: relative;
     border-radius: 50%;
-    position: absolute;
-    display: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+    background: #fff;
+    &:before {
+        content: "";
+        width: rem(13px);
+        height: rem(13px);
+        background: $red;
+        border-radius: 50%;
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .radio__title {
-  padding-left: rem(10px);
-  padding-right: rem(17px);
+    padding-left: rem(10px);
+    padding-right: rem(17px);
 }
 
 .radio__controls {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
