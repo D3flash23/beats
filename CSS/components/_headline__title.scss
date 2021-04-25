@@ -16,14 +16,14 @@
   }
 
   @include phones {
-    font-size: 32px;
+    font-size: rem(32px);
     margin-bottom: 0.6rem;
   }
 }
 .headline__subtitle {
   font-family: Play;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: rem(16px);
+  line-height: rem(19px);
   padding: 0 20%;
 
   @include tablets {
@@ -32,7 +32,7 @@
 
   @include phones {
     padding: 0 3%;
-    font-size: 16px;
+    font-size: rem(16px);
     line-height: rem(19px);
   }
 }
