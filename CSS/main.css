@@ -1146,7 +1146,7 @@ svg path {
 }
 
 .product-slider__arrow {
-  background: url("/img/icon/arrow.svg") center center no-repeat;
+  background: url("../img/icon/arrow.svg") center center no-repeat;
   background-size: contain;
   display: block;
   width: 0.8125rem;
