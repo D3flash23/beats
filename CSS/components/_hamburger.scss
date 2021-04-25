@@ -1,22 +1,23 @@
 .hamburger {
-    width: 26px;
-    height: 24px;
+  width: 26px;
+  height: 24px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  position: fixed;
+  right: 2.9%;
+  top: 2.5%;
+  margin-top: rem(6px);
+
+  @include tablets {
     display: inline-flex;
-    flex-direction: column;
-    justify-content: space-between;
-    display: none;
-    position: fixed;
-    right: 2.9%;
-    top: 2.5%;
-    margin-top: rem(6px);
-    @include tablets {
-        display: inline-flex;
-    }
+  }
 }
 
 .hamburger__plank {
-    display: block;
-    background: $black;
-    height: 4px;
-    border-radius: 10px;
+  display: block;
+  background: $black;
+  height: 4px;
+  border-radius: 10px;
 }

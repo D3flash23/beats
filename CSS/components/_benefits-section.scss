@@ -6,6 +6,7 @@
     content: url(../img/decor/triangle.png);
     bottom: -1.375rem;
     left: 25%;
+    z-index: 10;
 
     @include tablets {
       left: 5%;

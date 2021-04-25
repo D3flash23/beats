@@ -1,0 +1,38 @@
+.products-slider {
+  position: relative;
+  height: 100%;
+
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.product-slider__arrow {
+  background: url("/img/icon/arrow.svg") center center no-repeat;
+  background-size: contain;
+  display: block;
+  width: rem(13px);
+  height: rem(28px);
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  &--direction--next {
+    right: rem(50px);
+  }
+
+  &--direction--prev {
+    left: 0;
+    transform: rotate(-180deg) translateY(50%);
+  }
+}
+
+.products-slider__icon {
+  width: rem(14px);
+  height: rem(26px);
+  display: block;
+  fill: black;
+}

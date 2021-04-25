@@ -1,0 +1,10 @@
+.product-section {
+  background: $grey;
+  position: relative;
+}
+.product-section::before {
+  position: absolute;
+  content: url(../img/decor/Rectangle.png);
+  bottom: -1.5rem;
+  left: 75%;
+}
