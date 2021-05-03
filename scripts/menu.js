@@ -11,3 +11,7 @@ closeBtn.addEventListener("click", e => {
   e.preventDefault();
   menu.classList.remove("active");
 })
+
+menu.addEventListener("click",e=> {
+	menu.classList.remove("active")
+})

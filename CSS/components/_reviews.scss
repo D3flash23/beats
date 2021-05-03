@@ -1,84 +1,108 @@
 .reviews__display {
-  background: #f8faf9;
-  padding: 2.625rem;
-  margin-bottom: 0.9375rem;
-  position: relative;
+  padding: rem(50px) rem(45px) rem(35px);
+  display: flex;
   overflow: hidden;
+  position: relative;
+  margin-bottom: rem(20px);
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: rem(40px);
+  }
+
   &:before {
     content: "";
     display: block;
-    width: 5.1875rem;
-    height: 5.1875rem;
-    background: #fff;
-    border-radius: 50%;
     position: absolute;
+    top: rem(-70px);
     left: 50%;
-    transform: translate(-50%);
-    top: -3.5625rem;
+    transform: translateX(-50%);
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+  }
+}
+
+.reviews {
+  position: relative;
+  min-height: rem(280px);
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+
+  opacity: 0;
+
+  &.active {
+    position: static;
+    opacity: 1;
+    pointer-events: unset;
   }
 }
 
 .reviews__display-inner {
   display: flex;
+
   @include tablets {
     flex-direction: column;
-    text-align: center;
     align-items: center;
   }
 }
 
 .reviews__avatar {
   width: rem(253px);
-  height: rem(264px);
+  height: rem(260px);
+  margin-right: rem(20px);
+
   @include tablets {
-    width: rem(130px);
-    height: rem(130px);
+    margin-right: 0;
+    margin-bottom: rem(30px);
+  }
+
+  @include phones {
+    width: rem(124px);
+    height: rem(154px);
   }
 }
 
-.reviews__avatar-img {
-  object-fit: cover;
+.reviews__avatar-pic {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
-.reviews__content {
+.reviews__text {
   flex: 1;
-  padding: rem(35px);
+  padding-right: rem(80px);
+  padding-top: rem(8px);
+
   @include tablets {
-    padding: 0;
+    text-align: center;
+    padding-right: 0;
+    padding-top: 0;
   }
 }
 
 .reviews__title {
-  font-family: Play;
+  font-size: rem(30px);
   font-weight: bold;
-  font-size: rem(24px);
-  line-height: rem(28px);
-  color: $black;
-  margin-bottom: rem(27px);
+  margin-bottom: rem(18px);
+  color: #323232;
 }
 
-.reviews__text {
-  font-family: Play;
-  line-height: rem(19px);
-  margin-bottom: rem(38px);
-  padding-right: 15%;
-  @include tablets {
-    padding-left: 0.5rem;
-    padding: 0;
-  }
+.reviews__content {
+  margin-bottom: rem(9px);
 }
 
 .reviews__author {
-  font-family: Play;
+  color: #666666;
   font-weight: bold;
-  font-size: rem(18px);
-  line-height: rem(21px);
-  color: $black;
-}
-
-.reviews__switcher {
-  display: flex;
-  justify-content: center;
 }
