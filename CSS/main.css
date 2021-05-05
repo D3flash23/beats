@@ -1740,7 +1740,7 @@ svg path {
   left: 0;
   right: 0;
   height: 2.1875rem;
-  background: #3e3e3e;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1751,7 +1751,7 @@ svg path {
   width: 0;
   height: 0;
   border: 0.6875rem solid transparent;
-  border-left-color: #626262;
+  border-left-color: #fff;
   padding: 0;
   border-right-width: 0;
   background: transparent;
@@ -1770,7 +1770,7 @@ svg path {
   width: 0.3125rem;
   top: 0;
   bottom: 0;
-  background: #626262;
+  background: #fff;
 }
 .player__start.paused:after {
   right: 0;
@@ -1792,13 +1792,13 @@ svg path {
   top: 50%;
   left: 0;
   right: 0;
-  background: #626262;
+  background: #fff;
   display: block;
   transform: translateY(-50%);
 }
 
 .player__playback-button {
-  background: #626262;
+  background: red;
   border-radius: 3.125rem;
   border: none;
   width: 0.75rem;
@@ -1811,8 +1811,9 @@ svg path {
 }
 
 .player__duration {
-  color: #626262;
-  font-weight: bold;
+  color: #fff;
+  font-weight: normal;
+  font-family: inherit;
 }
 
 .player__elem {
