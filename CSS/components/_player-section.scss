@@ -1,5 +1,16 @@
 .player-section {
   background: #f8faf9;
+
+  &:before {
+    position: absolute;
+    content: url(../img/decor/Polygon.png);
+    bottom: -353.375rem;
+    left: 80%;
+    @include tablets {
+      left: 87%;
+      bottom: -404rem;
+    }
+  }
 }
 
 .player-section__container {

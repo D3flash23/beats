@@ -755,6 +755,7 @@ svg path {
 @media screen and (max-width: 768px) {
   .reviews-section:before {
     left: 7%;
+    bottom: -1.85rem;
   }
 }
 
@@ -1823,6 +1824,18 @@ svg path {
 
 .player-section {
   background: #f8faf9;
+}
+.player-section:before {
+  position: absolute;
+  content: url(../img/decor/Polygon.png);
+  bottom: -353.375rem;
+  left: 80%;
+}
+@media screen and (max-width: 768px) {
+  .player-section:before {
+    left: 87%;
+    bottom: -404rem;
+  }
 }
 
 .player-section__container {
