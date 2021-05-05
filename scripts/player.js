@@ -79,6 +79,7 @@ const onPlayerStateChange = event => {
       playerButton.addClass("paused");
       break;
     case 2:
+		$('.player__wrapper').removeClass('active');
       playerButton.removeClass("paused");
       break;
   }
