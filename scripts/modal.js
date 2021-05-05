@@ -12,7 +12,8 @@ const validateFields =(form,fieldsArray) => {
 	return errorFields.length === 0;
 };
 
- $(".form").submit(e => {
+$(".form").submit(e => {
+
 	e.preventDefault();
 
 	const form = $(e.currentTarget);
@@ -25,6 +26,12 @@ const validateFields =(form,fieldsArray) => {
 	const content = modal.find(".modal__content");
 
 	modal.removeClass("error-modal");
+
+	$(".app-submit-btn").click(function() {
+
+		$("form")[0].reset();
+
+  });
 
 
 	const isValid = validateFields(form,[name, phone,comment,to]);

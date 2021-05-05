@@ -1,55 +1,52 @@
 .fixed-menu {
   position: fixed;
-  top: 20%;
-  right: 3%;
+  top: 42%;
+  left: 1%;
   z-index: $z-fixed-menu;
-  border: 0.0625rem solid transparent;
+  color: $black;
+  transition: 0.3s;
+
   @include tablets {
     display: none;
+  }
+
+  &--white {
+    color: #fff;
   }
 }
 
 .fixed-menu__item {
-  margin-bottom: 0.4375rem;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  margin-bottom: rem(5px);
 
   &--active {
     .fixed-menu__link {
-      border-color: $red;
+      border-color: currentColor;
     }
   }
 }
 
 .fixed-menu__link {
-  width: 1.125rem;
-  height: 1.125rem;
+  width: rem(16px);
+  height: rem(16px);
   border-radius: 50%;
-  border: 0.0625rem solid transparent;
+  border: rem(1px) solid transparent;
   display: block;
   position: relative;
+
+  &:hover {
+    border-color: currentColor;
+  }
 
   &:before {
     content: "";
     display: block;
-    width: 0.5625rem;
-    height: 0.5625rem;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
-    background: $black;
+    background: currentColor;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  &:hover {
-    border-radius: 50%;
-    border: 0.0625rem solid $red;
-
-    &:before {
-      background: $red;
-    }
   }
 }

@@ -27,14 +27,13 @@
 
 .menu__list {
   display: flex;
-  align-items: center;
+
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .menu__item {
   margin-right: rem(27px);
-  margin-bottom: rem(10px);
 
   &:last-child {
     margin-right: 0;

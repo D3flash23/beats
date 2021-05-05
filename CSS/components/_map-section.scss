@@ -1,3 +1,16 @@
 .map-section {
-  background: url("../img/decor/map.png") no-repeat;
+  position: relative;
 }
+
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/decor/map.png") center center / cover no-repeat;
+}
+
+// .map-section {
+//   background: url("../img/decor/map.png") no-repeat;
+// }
