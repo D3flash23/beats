@@ -1007,7 +1007,7 @@ svg path {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url("/src/image/decor/tick.png") center center no-repeat;
+  background: url("./src/image/decor/tick.png") center center no-repeat;
 }
 
 .radio__elem {
