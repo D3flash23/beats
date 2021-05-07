@@ -1,5 +1,6 @@
 html {
   font-size: $baseFontSize;
+
   @include tablets {
     font-size: $baseFontSize - 1px;
   }
@@ -14,7 +15,7 @@ body {
 }
 
 body {
-  font-family: "Alegreya Sans", Play;
+  font-family: "Alegreya Sans", "Play";
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

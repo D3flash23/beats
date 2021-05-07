@@ -3,12 +3,12 @@
 
   &:before {
     position: absolute;
-    content: url(../img/decor/Polygon.png);
+    content: url(../image/decor/Polygon.png);
     bottom: -353.375rem;
     left: 80%;
     @include tablets {
       left: 87%;
-      bottom: -404rem;
+      bottom: -377rem;
     }
   }
 }

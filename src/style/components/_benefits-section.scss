@@ -1,14 +1,15 @@
-.reviews-section {
+.benefits-section {
   position: relative;
 
-  &:before {
+  &::before {
     position: absolute;
-    content: url(../img/decor/circle.png);
+    content: url(../image/decor/triangle.png);
     bottom: -1.375rem;
     left: 25%;
+    z-index: 10;
+
     @include tablets {
-      left: 7%;
-      bottom: -1.85rem;
+      left: 5%;
     }
   }
 }

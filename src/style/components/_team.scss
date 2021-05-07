@@ -3,7 +3,6 @@
   justify-content: space-between;
 
   @include tablets {
-    // flex-wrap: wrap;
     padding: 0 10%;
     flex-direction: column;
     align-items: center;
@@ -38,7 +37,6 @@
     position: absolute;
     top: 100%;
   }
-  // display: none;
 }
 
 .team__item {
@@ -61,16 +59,13 @@
     flex: initial;
     margin-bottom: rem(35px);
     margin-right: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @include phones {
-    // width: calc(100% / 2 - 70px);
     width: auto;
-    // margin-left: rem(70px);
-  }
-
-  &:last-child {
-    margin-right: 0;
   }
 }
 
@@ -107,6 +102,10 @@
     border-bottom: 0;
     display: block;
     margin-left: rem(5px);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
